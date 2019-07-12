@@ -1,0 +1,82 @@
+body{
+    /* background-image: url(Landscape-Desktop-Backgrounds-3.jpg);*/
+     background-color: whitesmoke;
+     height: 1000px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ /*.container{
+     background-color: aliceblue;
+ }*/
+ 
+ /*foot control*/
+ html,
+ body {
+   height: 100%;
+ }
+ 
+ .wrapper {
+   height: auto !important;
+   height: 100%;
+   min-height: 100%;
+   margin: 0 auto -105px;
+ }
+ 
+ footer,
+ .push {
+   height: 100px;
+ }
+ 
+ footer {
+     padding: 30px 0;
+     clear: both;
+     font-size: 12px;
+     text-align: center;
+   }
+ 
+   /*content styling*/
+ 
+   /* contact page */
+ 
+ #contact-form ul {
+   margin-bottom: 20px;
+ }
+ 
+ #contact-form li {
+   margin-bottom: 10px;
+ }
+ 
+ label,
+ input[type=text],
+ input[type=email],
+ textarea {
+   display: block;
+   width: 100%;
+ }
+ 
+ input[type=text],
+ input[type=email],
+ textarea {
+   height: 35px;
+   padding: 0 10px;
+   font-size: 14px;
+   border: 1px solid #dddddd;
+ }
+ 
+ textarea {
+   height: 200px;
+ }
+ 
+ input[type=submit] {
+   padding: 10px 30px;
+   font-size: 18px;
+   color: #ffffff;
+   cursor: pointer;
+   background: red;
+   border: 0 none;
+ }
+
+small {
+    color: aliceblue;
+}
