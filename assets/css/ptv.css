@@ -1,0 +1,29 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6lnJbBoriExpSFRZ0EQ9CkP9zGLaZ5F_PMBIkFDSnJXClMl4n0Q);
+}
+.bigbox{
+    width: 80%;
+    margin: auto;
+}
+.box1{
+    background-color: white;
+    border: 5px red solid;
+    padding: 20px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #B22222;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    color: #B22222;
+}
+.bold{
+    font-style: oblique;
+}
+#pic{
+    width: auto;
+}
