@@ -46,10 +46,7 @@ const bands = {
         }
     }
 }
-/*
+
 module.exports = {
     bands: bands
-}*/
-export function hello() {
-    return "Hello";
-  }
+}

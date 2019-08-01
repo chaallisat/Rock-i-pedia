@@ -1,12 +1,12 @@
-const information = require("./bandAPI.js")
+const music = require("./bandAPI.js")
 
-console.log(information.bands);
+// console.log(music.bands);
 
-const name = information.bands.rock.paramore.name;
-const img = information.bands.rock.paramore.image;
-const song = information.bands.rock.paramore.bestsong;
+const rocks = music.bands.rock;
 
-console.log(name);
-console.log(img);
-console.log(song);
+const name = rocks.paramore.name;
+const img = rocks.paramore.image;
+const song = rocks.paramore.bestsong;
+
+console.log(`Name: ${name} \nImage: ${img} \nSong Name: ${song}`);
 
