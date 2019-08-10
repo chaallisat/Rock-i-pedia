@@ -56,21 +56,17 @@ const serveHTML = (filePath, res) => {
 }
 
 app.get("/api/bands", function(req, res) {
-    return res.json(bands);
-  });
-
-app.get("/api/waitlist", function(req, res) {
-    return res.json(waitlist);
-  });  
+    return res.json(rocks);
+  }); 
 
   app.get("/api/bands/:rocks", function(req, res) {
     const chosen = req.params.rocks;
   
     console.log(chosen);
   
-     for (let i = 0; i < bands.length; i++) {
-       if (chosen === bands[i].routeName) {
-         return res.json(bands[i]);
+     for (let i = 0; i < rocks.length; i++) {
+       if (chosen === rocks[i].routeName) {
+         return res.json(rocks[i]);
        }
      }
   
@@ -86,7 +82,7 @@ app.get("/api/waitlist", function(req, res) {
   
      console.log(newrocks);
   
-     bands.push(newrocks);
+     rocks.push(newrocks);
   
     res.json(newrocks);
   });

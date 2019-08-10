@@ -1,5 +1,6 @@
 const bands = [
         {
+            routeName: "paramore",
             name: "Paramore",
             members: 5,
             artist: [],
@@ -8,6 +9,7 @@ const bands = [
             image: "https://i.ytimg.com/vi/aCyGvGEtOwc/maxresdefault.jpg"
         },
         {
+            routeName: "icon4hire",
             name: "Icon for Hire",
             members: 3,
             artist: [],
@@ -16,6 +18,7 @@ const bands = [
             image: "https://images.genius.com/813ec3e48552cb122ad19a0614641847.1000x1000x1.jpg"
         },
         {
+            routeName: "greenday",
             name: "Green Day",
             members: 3,
             artist: ["Billie-Joe Armstrong"],
@@ -24,6 +27,7 @@ const bands = [
             image: "find it"
         },
         {
+            routeName: "maydayparade",
             name: "Mayday Parade",
             members: 6,
             artist: [],
@@ -32,6 +36,7 @@ const bands = [
             image: "find it"
         },
         {
+            routeName: "pthev",
             name: "Pierce the Veil",
             members: 4,
             artist: ["Vic Fuentes", "Mike Fuentes", "Jaime Percaudo", "Tony Perry"],
@@ -40,6 +45,7 @@ const bands = [
             image: "find it"
         },
         {
+            routeName: "sws",
             name: "Sleeping with Sirens",
             members: 5,
             artist: [],
