@@ -2,9 +2,10 @@ const music = require("./bandAPI.js")
 const http = require("http");
 const express = require("express");
 const fs = require("fs");
+const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -14,46 +15,26 @@ app.use(express.json());
 
 
 const rocks = music.bands;
-
+/*
 for (let i = 0; i < rocks.length; i++) {
     const name = rocks[i].name;
     const img = rocks[i].image;
     const song = rocks[i].bestsong;
 
     console.log(`Name: ${name} \nImage: ${img} \nSong Name: ${song} \n ----------------------------`);
-}
+}*/
 
-const server = http.createServer(handleRequest);
-
-function handleRequest(req, res) {
-
-    const path = req.url;
-
-    switch (path) {
-
-        case "/":
-
-        case "/ptv":
-
-        case "/bands":
-
-            return serveHTML(`${path}.html`, res);
+// const server = http.createServer(handleRequest);
 
 
-        default:
-            return serveHTML("/index.html", res);
-    }
-
-
-}
-
-const serveHTML = (filePath, res) => {
-    return fs.readFile(__dirname + filePath, (err, data) => {
-        if (err) throw err;
-        res.writeHead(200, { "Content-type": "text/html" });
-        res.end(data);
-    })
-}
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+  });
+  
+  app.get("/ptv", function(req, res) {
+    res.sendFile(path.join(__dirname, "ptv.html"));
+  });
+  
 
 app.get("/api/bands", function(req, res) {
     return res.json(rocks);
